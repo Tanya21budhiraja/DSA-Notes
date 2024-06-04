@@ -1,6 +1,6 @@
 package Matrix;
 
-import java.util.*;
+import java.util.Arrays;
 
 public class Theory {
     public static void main(String[] args) {
@@ -62,7 +62,7 @@ public class Theory {
         }
 
         // to print col wise reverse
-        //  0 1  2
+        // 0 1 2
         // 0{ 7 4 1}
         // 1 { 8 5 2}
         // 2{ 9 6 3}
@@ -80,7 +80,7 @@ public class Theory {
         // { 7, 8, 1 },
 
         for (int row = arr3.length - 1; row >= 0; row--) {
-            for (int col = 0; col < arr3[row].length; col++) {
+            for (int col = arr3[row].length - 1; col >= 0; col--) {
                 if (row == col) {
                     System.out.println(arr3[row][col]);
                 }
